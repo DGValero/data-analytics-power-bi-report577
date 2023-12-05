@@ -19,7 +19,7 @@ I used Microsoft Power BI to design a compreshensive Quaterly report. This repor
 ### Data modelling
 
 1. **Dates Table**: In order to make use of Power BI's time intelligence functions, I made a continuous date table, covering the entire time period of the data, using DAX. I also added extra columns such as 'Start of the Year' or 'Quarter' to allow me to customise the visuals and measures later on.
-![Dates Table](<screenshots/1 - Dates Table.png>)
+![Dates Table](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/1%20-%20Dates%20Table.png?raw=true)
 
 2. **Star Schema Data Model**: next, I established relationships between key tables, building a star-based schema with one-to-many relationships and a single filter direction.
 ![Alt text](<screenshots/2 - Star schema.png>)
