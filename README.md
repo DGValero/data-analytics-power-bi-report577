@@ -22,14 +22,14 @@ I used Microsoft Power BI to design a compreshensive Quaterly report. This repor
 ![Dates Table](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/1%20-%20Dates%20Table.png?raw=true)
 
 2. **Star Schema Data Model**: next, I established relationships between key tables, building a star-based schema with one-to-many relationships and a single filter direction.
-![Alt text](<screenshots/2 - Star schema.png>)
+![Star schema](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/2%20-%20Star%20schema.png?raw=true)
 
 3. **Create key Measures**: using DAX, I created key measures that will be used in the report. More measures will be created as I developed the project. Some examples include: 'Total orders', 'Total revenue', and quarter-based performance indicators.
-![Alt text](<screenshots/3 - Measures.png>)
+![Key measures](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/3%20-%20Measures.png?raw=true)
 
 4. **Hierarchies**: to aid in granular and high-level explorations, I created two hierarchies: one for dates, to facilitate drill-down in the line charts; and one for geography, to allow filtering data by region, country and province/state. 
 
-    ![Alt text](<screenshots/4 - Date hierarchy.png>)
+    ![Date hierarchy](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/4%20-%20Date%20hierarchy.png?raw=true)
 
 ### Building the Customer Detail Page
 
@@ -41,7 +41,7 @@ I created a report page focusing on customer-level analysis. In this page, I set
 - A date slicer
 
 A screenshot of the finished page is shown below:
-![Customer Detail page](<screenshots/5 - Customer Detail page.png>)
+![Customer Detail page](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/5%20-%20Customer%20Detail%20page.png?raw=true)
 
 ### Building the Executive Summary Page
 
@@ -55,19 +55,19 @@ This page contains the following visuals:
 - A table of the top 10 products
 
 A screenshot of the finished page is shown below:
-![Executive Summary page](<screenshots/6 - Executive summary.png>)
+![Executive Summary page](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6%20-%20Executive%20summary.png?raw=true)
 
 To create the table showing only the top 10 products I used the filter functionality in PowerBI:
-![Alt text](<screenshots/6.1 - Filtering top products.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6.1%20-%20Filtering%20top%20products.png?raw=true)
 
 Then I applied conditional formatting to the Total Revenue column to show bars indicating the % revenue value:
-![Alt text](<screenshots/6.2 Conditional formatting on table.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6.2%20Conditional%20formatting%20on%20table.png?raw=true)
 
 To create the KPI visuals I needed to create new measures in DAX: Previous quarter revenue, Previous quarter Profit and Previous Quarter Orders:
-![Alt text](<screenshots/6.3 DAX for previous quarter.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6.3%20DAX%20for%20previous%20quarter.png?raw=true)
 
 I also created Target goal measures that are a 5% increase of the previous quarter:
-![Alt text](<screenshots/6.4 DAX Target revenue.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6.4%20DAX%20Target%20revenue.png?raw=true)
 
 With these measures I was able to create my KPI figures:
-![Alt text](<screenshots/6.5 KPI visual.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6.5%20KPI%20visual.png?raw=true)
