@@ -79,7 +79,7 @@ The purpose of this page is provide an in-depth look at which products within th
 To achieve this, you I built a report page that provides insights for all products and regions combined. 
 
 Additionally, to allow the users of the report filter data easily, I created a pop-up banner using bookmarks add a slicer toolbar which can be accessed from the navigation pane. A screenshot of the custom filter toolbar I created is shown below:
-![Alt text](<7.1 Product detail.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/7.1%20Product%20detail.png?raw=true)
 
 The Product Detail page I created contains the following visuals:
 - Card visuals to show which filters are currently selected
@@ -89,30 +89,30 @@ The Product Detail page I created contains the following visuals:
 - A scatter graph of quantity ordered against profit per item for products in the current context
 
 A screenshot of the finished page is shown below:
-![Alt text](<7 - Product detail.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/7%20-%20Product%20detail.png?raw=true)
 
 ### Building a Stores Map Page
 
 This page allows the regional managers to easily check on the stores under their control, allowing them to see which of the stores are most profitable, as well as which ones are on track to reach their quarterly profit and revenue targets.
 
 The best way to handle this is using a map visual.
-![Alt text](<8. Stores map.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/8.%20Stores%20map.png?raw=true)
 
 #### Drillthrough page
 
 I also created a drillthrough page that summarises each store's performance. I built this page to make it easy for the region managers to check on the progress of a given store. 
 
 Right-click on a given store then click:
-![Alt text](<8.1 Drillthrough.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/8.1%20Drillthrough.png?raw=true)
 
 Drillthrough page for the Hamburg store:
-![Alt text](<8.2 Drillthrough page.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/8.2%20Drillthrough%20page.png?raw=true)
 
 #### Tooltip page
 
 I wanted users to be able to see each store's year-to-date profit performance against the profit target just by hovering the mouse over a store on the map. To do this, I created a custom tooltip page with a profit gauge visual, and then set the tooltip of the visual to the tooltip page I have created. See example below:
 
-![Alt text](<8.3 Tooltip.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/8.3%20Tooltip.png?raw=true)
 
 ### Cross-filtering and navigation
 
@@ -122,8 +122,8 @@ PowerBI has cross-filtering of visuals enabled by default. This means that click
 
 I also added custom navigation buttons with links to each page of the PowerBI report. These buttons would be highlighted when hovering over them.
 
-![Alt text](<9. Navigation.png>)
-![Alt text](<9.1 Navigation.png>)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/9.%20Navigation.png?raw=true)
+![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/9.1%20Navigation.png?raw=true)
 
 ## Creating metrics for outside users using SQL
 
