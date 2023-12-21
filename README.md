@@ -71,3 +71,78 @@ I also created Target goal measures that are a 5% increase of the previous quart
 
 With these measures I was able to create my KPI figures:
 ![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6.5%20KPI%20visual.png?raw=true)
+
+### Building the Product Detail Page
+
+The purpose of this page is provide an in-depth look at which products within the inventory are performing well, with the option to filter by product and region.
+
+To achieve this, you I built a report page that provides insights for all products and regions combined. 
+
+Additionally, to allow the users of the report filter data easily, I created a pop-up banner using bookmarks add a slicer toolbar which can be accessed from the navigation pane. A screenshot of the custom filter toolbar I created is shown below:
+![Alt text](<7.1 Product detail.png>)
+
+The Product Detail page I created contains the following visuals:
+- Card visuals to show which filters are currently selected
+- Gauge visuals to show how the selected category's revenue, profit and number of orders are performing against a quarterly target
+- An area chart showing relative revenue performance of each category over time
+- A table showing the top 10 products by revenue in the selected context
+- A scatter graph of quantity ordered against profit per item for products in the current context
+
+A screenshot of the finished page is shown below:
+![Alt text](<7 - Product detail.png>)
+
+### Building a Stores Map Page
+
+This page allows the regional managers to easily check on the stores under their control, allowing them to see which of the stores are most profitable, as well as which ones are on track to reach their quarterly profit and revenue targets.
+
+The best way to handle this is using a map visual.
+![Alt text](<8. Stores map.png>)
+
+#### Drillthrough page
+
+I also created a drillthrough page that summarises each store's performance. I built this page to make it easy for the region managers to check on the progress of a given store. 
+
+Right-click on a given store then click:
+![Alt text](<8.1 Drillthrough.png>)
+
+Drillthrough page for the Hamburg store:
+![Alt text](<8.2 Drillthrough page.png>)
+
+#### Tooltip page
+
+I wanted users to be able to see each store's year-to-date profit performance against the profit target just by hovering the mouse over a store on the map. To do this, I created a custom tooltip page with a profit gauge visual, and then set the tooltip of the visual to the tooltip page I have created. See example below:
+
+![Alt text](<8.3 Tooltip.png>)
+
+### Cross-filtering and navigation
+
+The PowerBI report was fully functional at this point but there were a few details left to add. 
+
+PowerBI has cross-filtering of visuals enabled by default. This means that clicking on a visual will automatically filter the others. This can be beneficial in some situation but can also become confusing. I reviewed the cross-filtering of all visuals to ensure the report is used as intended.
+
+I also added custom navigation buttons with links to each page of the PowerBI report. These buttons would be highlighted when hovering over them.
+
+![Alt text](<9. Navigation.png>)
+![Alt text](<9.1 Navigation.png>)
+
+## Creating metrics for outside users using SQL
+
+In case some clients do not have access to visualisation tools such as PowerBI, I also extracted insights from the data using SQL. This would allow me to extract and disseminate key data without solely relying on visualisation tools.
+
+Using VisualStudio and the SQLTools extension, I created a connection to the Postgres database server hosted on Microsoft Azure.
+
+Once I stablished the connection, I explored the contents of the database tables, columns and data.
+
+As an example, I identified the following questions and created SQL queries to come up with the answer.
+
+1. How many staff are there in all of the UK stores?
+
+2. Which month in 2022 has had the highest revenue?
+
+3. Which German store type had the highest revenue for 2022?
+
+4. Create a view where the rows are the store types and the columns are the total sales, percentage of total sales and the count of orders
+
+5. Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
+
+I saved these SQL queries in the *SQL queries* folder in GitHub, as well as the output in .csv format.
