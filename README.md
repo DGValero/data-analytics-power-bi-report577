@@ -1,18 +1,18 @@
 # Data Analytics with Power BI 
 
-In this project, I am analising a medium-sized international retailer who is keen on elevating their business intelligence practices. With operations spanning across different regions, they have accumulated large amounts of sales from disparate sources over the years. Recognising the value of this data, they aim to transform it into actionable insights for better decision-making.
+In this project, I am analysing a medium-sized international retailer who is keen on elevating their business intelligence practices. With operations spanning across different regions, they have accumulated large amounts of sales from disparate sources over the years. Recognising the value of this data, they aim to transform it into actionable insights for better decision-making.
 
-I used Microsoft Power BI to design a compreshensive Quaterly report. This report presents a high-level business summary tailored for C-suite executives, and also gives insights into their highest value customers segmented by sales region, provide a detailed analysis of top-performing products categorised by type against their sales targets, and a visually appealing map visual that spotlights the performance metrics of their retail outlets across different territories.
+I used Microsoft Power BI to design a comprehensive quarterly report. This report presents a high-level business summary tailored for C-suite executives, and also gives insights into their highest value customers segmented by sales region, provide a detailed analysis of top-performing products categorised by type against their sales targets, and a visually appealing map visual that spotlights the performance metrics of their retail outlets across different territories.
 
 ## Tasks implemented
 
-### Loading and tranforming data
+### Loading and transforming data
 
-1. **Orders** Table: this is the main fact table. I imported this table from an Azure SQL Database using the appropiate credentials. Once I connected to the database, I transform the data in Power Query Editor deleting the *[Card Number]* column to ensure data privacy. I also split the *[Order Date]* column into two distinct columns each: one for the date and another for the time. As there were order rows with missing and null values, I removed these to maintain data integrity. Finally, I renamed the columns in the dataset to align with Power BI naming conventions.
+1. **Orders** Table: this is the main fact table. I imported this table from an Azure SQL Database using the appropriate credentials. Once I connected to the database, I transform the data in Power Query Editor deleting the *[Card Number]* column to ensure data privacy. I also split the *[Order Date]* column into two distinct columns each: one for the date and another for the time. As there were order rows with missing and null values, I removed these to maintain data integrity. Finally, I renamed the columns in the dataset to align with Power BI naming conventions.
 
 2. **Products** Table: the data for this table was stored in a local .csv file that I imported to Power Query. 
 
-3. **Stores** Table: the data for this table was stored in .csv format in an Azure Blob Storage. I connected to the blob storage using the appropiate credentials and renamed the columns to ensure clarity and consistency in my report.
+3. **Stores** Table: the data for this table was stored in .csv format in an Azure Blob Storage. I connected to the blob storage using the appropriate credentials and renamed the columns to ensure clarity and consistency in my report.
 
 4. **Customers** Table: this data was provided as a .zip file. Inside the zip file is a folder containing three CSV files, each with the same column format, one for each of the regions in which the company operates. Using the *Folder data connector* in Power BI, I loaded this data, removed unused columns and renamed remaining columns as required.
 
@@ -34,25 +34,25 @@ I used Microsoft Power BI to design a compreshensive Quaterly report. This repor
 ### Building the Customer Detail Page
 
 I created a report page focusing on customer-level analysis. In this page, I set up the following visuals:
-- Card Visuals for total distinct customers and revenue per customer
-- A line chart of weekly distinct customers
-- A table showing the top 20 customers by total revenue, and a bar chart showing number of customers by product category
-- A set of three card visuals showing the name, number of orders, and revenue for the top customer by revenue
-- A date slicer
+- Card Visuals for total distinct customers and revenue per customer.
+- A line chart of weekly distinct customers.
+- A table showing the top 20 customers by total revenue, and a bar chart showing number of customers by product category.
+- A set of three card visuals showing the name, number of orders, and revenue for the top customer by revenue.
+- A date slicer.
 
 A screenshot of the finished page is shown below:
 ![Customer Detail page](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/5%20-%20Customer%20Detail%20page.png?raw=true)
 
 ### Building the Executive Summary Page
 
-I also created a report page for the high-level executive summary. The purpose of this page is to give an overview of the company's performance as a whole, so that C-suite executivves can quickly get insights and check outcomes against key targets.
+I also created a report page for the high-level executive summary. The purpose of this page is to give an overview of the company's performance as a whole, so that C-suite executives can quickly get insights and check outcomes against key targets.
 This page contains the following visuals:
-- Card visuals showing Total revenue, Total profit and Total orders
-- A graph of revenue against time
-- Donut charts showing orders and revenue by country
-- A bar chard of orders by category
-- KPIs for Quarterly revenue, customers and profit
-- A table of the top 10 products
+- Card visuals showing Total revenue, Total profit and Total orders.
+- A graph of revenue against time.
+- Donut charts showing orders and revenue by country.
+- A bar chard of orders by category.
+- KPIs for Quarterly revenue, customers and profit.
+- A table of the top 10 products.
 
 A screenshot of the finished page is shown below:
 ![Executive Summary page](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/6%20-%20Executive%20summary.png?raw=true)
@@ -74,7 +74,7 @@ With these measures I was able to create my KPI figures:
 
 ### Building the Product Detail Page
 
-The purpose of this page is provide an in-depth look at which products within the inventory are performing well, with the option to filter by product and region.
+The purpose of this page is providing an in-depth look at which products within the inventory are performing well, with the option to filter by product and region.
 
 To achieve this, you I built a report page that provides insights for all products and regions combined. 
 
@@ -82,11 +82,11 @@ Additionally, to allow the users of the report filter data easily, I created a p
 ![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/7.1%20Product%20detail.png?raw=true)
 
 The Product Detail page I created contains the following visuals:
-- Card visuals to show which filters are currently selected
-- Gauge visuals to show how the selected category's revenue, profit and number of orders are performing against a quarterly target
-- An area chart showing relative revenue performance of each category over time
-- A table showing the top 10 products by revenue in the selected context
-- A scatter graph of quantity ordered against profit per item for products in the current context
+- Card visuals to show which filters are currently selected.
+- Gauge visuals to show how the selected category's revenue, profit and number of orders are performing against a quarterly target.
+- An area chart showing relative revenue performance of each category over time.
+- A table showing the top 10 products by revenue in the selected context.
+- A scatter graph of quantity ordered against profit per item for products in the current context.
 
 A screenshot of the finished page is shown below:
 ![Alt text](https://github.com/DGValero/data-analytics-power-bi-report577/blob/main/Screenshots/7%20-%20Product%20detail.png?raw=true)
@@ -129,11 +129,11 @@ I also added custom navigation buttons with links to each page of the PowerBI re
 
 In case some clients do not have access to visualisation tools such as PowerBI, I also extracted insights from the data using SQL. This would allow me to extract and disseminate key data without solely relying on visualisation tools.
 
-Using VisualStudio and the SQLTools extension, I created a connection to the Postgres database server hosted on Microsoft Azure.
+Using Visual Studio Code and the `SQLTools` extension, I created a connection to the Postgres database server hosted on Microsoft Azure.
 
 Once I stablished the connection, I explored the contents of the database tables, columns and data.
 
-As an example, I identified the following questions and created SQL queries to come up with the answer.
+As an example, I identified the following questions and created `SQL` queries to come up with the answer.
 
 1. How many staff are there in all of the UK stores?
 
